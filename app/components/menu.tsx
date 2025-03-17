@@ -6,15 +6,15 @@ type Props = {}
 export default function Menu({ }: Props) {
     return (
         <div>
-            <ul>
+            <ul className='flex p-4'>
                 <li>
-                    <Link href="/">Home</Link>
+                    <Link className="p-2 hover:bg-amber-200 rounded-2xl" href="/">Home</Link>
                 </li>
                 <li>
-                    <Link href="/cars">Cars</Link>
+                    <Link className="p-2 hover:bg-amber-200 rounded-2xl" href="/cars">Cars</Link>
                 </li>
                 <li>
-                    <Link href="/trucks">Trucks</Link>
+                    <Link className="p-2 hover:bg-amber-200 rounded-2xl" href="/trucks">Trucks</Link>
                 </li>
             </ul>
         </div>
