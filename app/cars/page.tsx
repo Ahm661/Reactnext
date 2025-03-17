@@ -1,6 +1,6 @@
 import React from 'react'
-import Card from "../components/car/card"
 import { Car } from '@lib/types/types'
+import CarList from '../components/car/carlist'
 
 type Props = {}
 
@@ -8,7 +8,7 @@ const cars: Car[] = [
     {
         name: "Super Car",
         type: "BMW M3",
-        color: "red",
+        color: "Red",
         motor: {
             serialNumber: 1234,
             hp: 440,
@@ -34,17 +34,12 @@ const cars: Car[] = [
             hp: 820,
         }
     }
-]
-
+];
 
 export default function Cars({ }: Props) {
     return (
         <div>
-            <h1>Cars</h1>
-            {cars.map((car, index) => (
-            <Card key={index} car={car} />
-            ))}
-
+            <CarList cars={cars} />
         </div>
-    );
+    )
 }

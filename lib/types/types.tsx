@@ -1,9 +1,9 @@
-export interface Motor{
+export interface Motor {
     serialNumber: number;
     hp: number;
 }
 
-export interface Car{
+export interface Car {
     name: string;
     type: string;
     color: string;
